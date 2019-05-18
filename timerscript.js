@@ -18,6 +18,4 @@ if (Hours > 24) {
 	Hours = Hours - 24
 	Days = Days + 1
 }
-
-alert(DayX.getHours() + " & " + new Date().getHours());
 document.getElementById("timer").innerHTML=Days + " дней, " + Hours + " часов, " + Minutes + " минут.";
