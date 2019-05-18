@@ -5,6 +5,9 @@ var Minutes = DayX.getMinutes() - new Date().getMinutes();
 if (Hours < 0) {
 	Hours = 24 - Hours;
 }
+if (Hours > 24) {
+	Hours = Hours - 24
+}
 if (Minutes < 0) {
 	Minutes = 60 - Minutes;
 }
