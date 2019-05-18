@@ -1,3 +1,19 @@
+body {
+	background-image: url(sbox.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
 a{
-	color:green;
+	text-align:center;
+	width:100%;
+	display:block;
+	padding-top: 18%;
+	line-height:0%;
+	color:#139DFA;
+	font-family:Bahnschrift;
+}
+#timer{
+	font-size: 60px;
 }
