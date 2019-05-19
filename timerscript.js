@@ -19,4 +19,4 @@ if (Hours > 24) {
 	Hours = Hours - 24
 	Days = Days + 1
 }
-document.getElementById("timer").innerHTML=Years + " лет " + Days + " дней, " + Hours + " часов, " + Minutes + " минут.";
+document.getElementById("timer").innerHTML=Years + " лет, " + Days + " дней, " + Hours + " часов, " + Minutes + " минут.";
