@@ -35,5 +35,21 @@ function secondss() {
 		Minutes = Minutes + 1
 		Seconds = Seconds - 60
 	}
+	if (Minutes < 0) {
+		Minutes = Minutes + 60;
+		Hours = Hours - 1;
+	}
+	if (Minutes > 60) {
+		Minutes = Minutes - 60;
+		Hours = Hours + 1;
+	}
+	if (Hours < 0) {
+		Hours = Hours + 24;
+		Days = Days - 1;
+	}
+	if (Hours > 24) {
+		Hours = Hours - 24
+		Days = Days + 1
+	}
 	document.getElementById("timer").innerHTML=Years + " лет " + Days + " дней, " + Hours + " часов, " + Minutes + " минут, " + Seconds + " секунд.";
 }
