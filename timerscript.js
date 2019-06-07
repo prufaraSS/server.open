@@ -60,6 +60,12 @@ if (ZDays <0) {
 }
 
 document.getElementById("timer").innerHTML=Years + " лет " + Days + " дней, " + Hours + " часов, " + Minutes + " минут, " + Seconds + " секунд.";
+if (ZYears > 0) {
+	document.getElementById("timerclose").innerHTML=ZYears + " год " + ZDays + " дней, " + ZHours + " часов, " + ZMinutes + " минут, " + ZSeconds + " секунд.";
+}
+else {
+	document.getElementById("timerclose").innerHTML=ZDays + " дней, " + ZHours + " часов, " + ZMinutes + " минут, " + ZSeconds + " секунд.";
+}
 setInterval(secondss,1000);
 setInterval(moveImage,600);
 setInterval(changeImage,3000);
