@@ -1,11 +1,11 @@
-﻿var DayX = new Date(2022,10,10,0,40,0,0);
+﻿//var DayX = new Date(2022,10,10,0,40,0,0);
+var DayX = new Date(2019,7,5,12,0,0,0);
 
 var Years = DayX.getFullYear() - new Date().getFullYear()
-var Days = DayX.getMonth() * 29 + DayX.getDate() - new Date().getMonth() * 29 + new Date().getDate();
+var Days = DayX.getMonth() * 31 + DayX.getDate() - new Date().getMonth() * 31 - new Date().getDate();
 var Hours = DayX.getHours() - new Date().getHours();
 var Minutes = DayX.getMinutes() - new Date().getMinutes();
 var Seconds = DayX.getSeconds() - new Date().getSeconds();
-
 var DayZ = new Date(2018,8,5,12,39,45,0);
 var ZYears = new Date().getFullYear() - DayZ.getFullYear();
 var ZDays = new Date().getMonth() * 29 + new Date().getDate() - DayZ.getMonth() * 29 + DayZ.getDate();
@@ -115,7 +115,12 @@ function secondss() {
 		ZHours = ZHours - 24
 		ZDays = ZDays + 1
 	}
-	document.getElementById("timer").innerHTML=Years + " лет " + Days + " дней, " + Hours + " часов, " + Minutes + " минут, " + Seconds + " секунд.";
+	if (Years > 0) {
+		document.getElementById("timer").innerHTML=Years + " лет, " + Days + " дней, " + Hours + " часов, " + Minutes + " минут, " + Seconds + " секунд.";
+	}
+	else {
+		document.getElementById("timer").innerHTML=Days + " дней, " + Hours + " часов, " + Minutes + " минут, " + Seconds + " секунд.";
+	}
 	if (ZYears > 0) {
 		document.getElementById("timerclose").innerHTML=ZYears + " год " + ZDays + " дней, " + ZHours + " часов, " + ZMinutes + " минут, " + ZSeconds + " секунд.";
 	}
