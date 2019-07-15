@@ -59,7 +59,12 @@ if (ZDays <0) {
 	ZYears = ZYears - 1
 }
 
-document.getElementById("timer").innerHTML=Years + " лет " + Days + " дней, " + Hours + " часов, " + Minutes + " минут, " + Seconds + " секунд.";
+if (Years > 0) then
+	document.getElementById("timer").innerHTML=Years + " лет " + Days + " дней, " + Hours + " часов, " + Minutes + " минут, " + Seconds + " секунд.";
+}
+else {
+	document.getElementById("timer").innerHTML=Days + " дней, " + Hours + " часов, " + Minutes + " минут, " + Seconds + " секунд.";
+}
 if (ZYears > 0) {
 	document.getElementById("timerclose").innerHTML=ZYears + " год " + ZDays + " дней, " + ZHours + " часов, " + ZMinutes + " минут, " + ZSeconds + " секунд.";
 }
