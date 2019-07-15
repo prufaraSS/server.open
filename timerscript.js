@@ -59,7 +59,7 @@ if (ZDays <0) {
 	ZYears = ZYears - 1
 }
 
-if (Years > 0) then
+if (Years > 0) {
 	document.getElementById("timer").innerHTML=Years + " лет " + Days + " дней, " + Hours + " часов, " + Minutes + " минут, " + Seconds + " секунд.";
 }
 else {
