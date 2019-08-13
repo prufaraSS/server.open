@@ -1,0 +1,30 @@
+body{
+	background-color:#112144;
+}
+
+p{
+	text-align: center;
+	color:#ffffff;
+}
+div{
+	text-align: center;
+	color:#ffffff;
+}
+
+#canvas{
+	position:center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-top:10%;
+}
+#score{
+	text-align: center;
+	text-size: 40;
+}
+
+#timertext {
+	text-align: center;
+	color:#ffffff;
+	padding-top:3%;
+}
