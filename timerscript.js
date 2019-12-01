@@ -35,7 +35,7 @@ if (Hours > 24) {
 	Days = Days + 1;
 }
 if (Days < 0) {
-	Years = Years + 1;
+	Years = Years - 1;
 	Days = Days + 365;
 }
 if (ZSeconds < 0) {
