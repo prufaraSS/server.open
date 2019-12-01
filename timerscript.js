@@ -31,12 +31,16 @@ if (Hours < 0) {
 	Days = Days - 1;
 }
 if (Hours > 24) {
-	Hours = Hours - 24
-	Days = Days + 1
+	Hours = Hours - 24;
+	Days = Days + 1;
+}
+if (Days < 0) {
+	Years = Years + 1;
+	Days = Days + 365;
 }
 if (ZSeconds < 0) {
-	ZMinutes = ZMinutes - 1
-	ZSeconds = ZSeconds + 60
+	ZMinutes = ZMinutes - 1;
+	ZSeconds = ZSeconds + 60;
 }
 if (ZMinutes < 0) {
 	ZMinutes = ZMinutes + 60;
@@ -51,12 +55,12 @@ if (ZHours < 0) {
 	ZDays = ZDays - 1;
 }
 if (ZHours > 24) {
-	ZHours = ZHours - 24
-	ZDays = ZDays + 1
+	ZHours = ZHours - 24;
+	ZDays = ZDays + 1;
 }
 if (ZDays <0) {
-	ZDays = ZDays + 365
-	ZYears = ZYears - 1
+	ZDays = ZDays + 365;
+	ZYears = ZYears - 1;
 }
 
 if (Years > 0) {
