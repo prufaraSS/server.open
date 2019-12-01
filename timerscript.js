@@ -1,4 +1,4 @@
-var DayX = new Date(2022,10,10,0,40,0,0);
+var DayX = new Date(2020,7,1,0,0,0,0);
 //var DayX = new Date(2019,7,5,12,0,0,0);
 
 var Years = DayX.getFullYear() - new Date().getFullYear()
