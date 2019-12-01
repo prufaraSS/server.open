@@ -131,10 +131,10 @@ function secondss() {
 		document.getElementById("timer").innerHTML=Days + " дней, " + Hours + " часов, " + Minutes + " минут, " + Seconds + " секунд.";
 	}
 	if (ZYears > 0) {
-		document.getElementById("timerclose").innerHTML=ZYears + " год " + ZDays + " дней, " + ZHours + " часов, " + ZMinutes + " минут, " + ZSeconds + " секунд.";
+		document.getElementById("timerclose").innerHTML=ZYears + "г " + ZDays + "д " + ZHours + "ч " + ZMinutes + "м " + ZSeconds + "с";
 	}
 	else {
-		document.getElementById("timerclose").innerHTML=ZDays + " дней, " + ZHours + " часов, " + ZMinutes + " минут, " + ZSeconds + " секунд.";
+		document.getElementById("timerclose").innerHTML=ZDays + "д " + ZHours + "ч " + ZMinutes + "м " + ZSeconds + "с";
 	}
 }
 function changeImage() {
