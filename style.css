@@ -79,3 +79,11 @@
 	font-family:Bahnschrift;
 	top:90px;
 }
+#news{
+	position:absolute;
+	text-align:right;
+	padding-top:5px;
+	color:#139DFA;
+	font-family:Bahnschrift;
+	top:5px;
+}
