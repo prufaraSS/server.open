@@ -15,7 +15,7 @@ var ZSeconds = new Date().getSeconds() - DayZ.getSeconds();
 
 x = -3;
 
-var img = 1;
+var img = Math.floor((Math.random()*6)+1);
 var v = 0.5;
 
 var img1 = new Image();
