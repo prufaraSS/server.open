@@ -1,4 +1,4 @@
-var DayX = new Date(2021,5,1,0,0,0,0);
+﻿var DayX = new Date(2021,5,1,0,0,0,0);
 //var DayX = new Date(2019,7,5,12,0,0,0);
 
 var Years = DayX.getFullYear() - new Date().getFullYear()
@@ -13,6 +13,40 @@ var ZHours = new Date().getHours() - DayZ.getHours();
 var ZMinutes = new Date().getMinutes() - DayZ.getMinutes();
 var ZSeconds = new Date().getSeconds() - DayZ.getSeconds();
 
+x = -3;
+
+var img = 1;
+var v = 0.5;
+
+var img1 = new Image();
+var img2 = new Image();
+var img3 = new Image();
+var img4 = new Image();
+var img5 = new Image();
+var img6 = new Image();
+var blank = new Image();
+
+img1.src = "img1.jpg";
+img2.src = "img5.jpg";
+img3.src = "img3.jpg";
+img4.src = "img4.jpg";
+img5.src = "img2.jpg";
+img6.src = "img6.jpg";
+blank.src = "blank.png";
+
+var imgs=[img1,img2,img3,img4,img5,img6];
+
+var cv = document.getElementById('anim-bg');
+var ctx = cv.getContext("2d");
+
+function draw() {
+	ctx.drawImage(blank,0,0);
+	cv.style.opacity = v;
+	ctx.drawImage(imgs[img-1],x,0);
+	requestAnimationFrame(draw);
+}
+
+img1.onload = draw;
 
 if (Seconds < 0) {
 	Minutes = Minutes - 1
@@ -76,8 +110,8 @@ else {
 	document.getElementById("timerclose").innerHTML=ZDays + "д " + ZHours + "ч " + ZMinutes + "м " + ZSeconds + "с";
 }
 setInterval(secondss,1000);
-setInterval(moveImage,600);
-setInterval(changeImage,3000);
+setInterval(moveImage,500);
+setInterval(fade,20000);
 function secondss() {
 	Seconds = Seconds - 1;
 	ZSeconds = ZSeconds + 1;
@@ -137,6 +171,32 @@ function secondss() {
 		document.getElementById("timerclose").innerHTML=ZDays + "д " + ZHours + "ч " + ZMinutes + "м " + ZSeconds + "с";
 	}
 }
+function fade() {
+	if (v > 0) {
+		setTimeout(fade,40);
+	}
+	else {
+		changeImage();
+	}
+	v = v - 0.01;
+}
+
+function fadein() {
+	if (v < 0.5) {
+		setTimeout(fadein,40);
+	}
+	v = v + 0.01;
+}
+
 function changeImage() {
-	document.getElementById("image")
+	img = img + 1;
+	fadein();
+	v = 0.0;
+	x = 0
+	if (img > 6) {
+		img = 1;
+	}
+}
+function moveImage() {
+	x = x+1;
 }
