@@ -1,7 +1,6 @@
 #bg{
 	position:center;
-	padding-top:4%;
-	padding-bottom:0%;
+	padding-top:20%;
 	margin-left:auto;
 	margin-right:auto;
 	display:block;
@@ -24,12 +23,11 @@
 	font-family:Bahnschrift;
 }
 #timer{
-	font-size: 60px;
+	font-size: 20px;
 	text-align:center;
+	position:fixed;
+	bottom:0%;
 	width:100%;
-	display:block;
-	padding-top: 1%;
-	line-height:0%;
 	color:#139DFA;
 	font-family:Bahnschrift;
 }
@@ -40,7 +38,7 @@
 	line-height:10px;
 	color:#139DFA;
 	font-family:Bahnschrift;
-	top:15px;
+	top:8px;
 }
 #timerclosetext2{
 	position:absolute;
@@ -49,13 +47,13 @@
 	line-height:15px;
 	color:#139DFA;
 	font-family:Bahnschrift;
-	top:15px;
+	top:8px;
 }
 #bg-img{
-	position:absolute;
+	position:fixed;
 	margin:0 auto;
 	padding:0;
-	top:125%;
+	bottom:0px;
 	left:5px;
 	
 }
@@ -70,7 +68,7 @@
 	line-height:15px;
 	color:#139DFA;
 	font-family:Bahnschrift;
-	top:40px;
+	top:35px;
 }
 #timerclose{
 	position:absolute;
@@ -79,7 +77,7 @@
 	line-height:15px;
 	color:#139DFA;
 	font-family:Bahnschrift;
-	top:90px;
+	top:80px;
 }
 #news{
 	position:absolute;
@@ -109,4 +107,16 @@
 	height:110%;
 	z-index:1;
 	opacity:50%;
+}
+#loading{
+	position:fixed;
+	right:5px;
+	bottom:5px;
+}
+#test{
+	position:fixed;
+	right:200px;
+	bottom:46px;
+	color:#bbbdc1;
+	text-shadow: none;
 }
