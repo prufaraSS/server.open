@@ -1,25 +1,25 @@
 <html>
 	<head>
-		<title>Информация по SBox!</title>
+		<title>SBox</title>
 		<link href="style.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
 	</head>
 	
 	<body>
+		<div id="event1">
+			<audio src="music1.wav" id="music1"></audio>
+			<audio src="music2.wav" id="music2" loop = "loop"></audio>
+			<img src="black.png" id = "bg-preludins"><img>
+			<canvas width=1960 height = 980 id="preludins"></canvas>
+		</div>
 		<canvas id="anim-bg" width=1960 height=980></canvas>
 		<div id="main">
-			<h2><a id="timerclose">...</a></h2>
-			<h2><a id="timerclosetext">Последняя активность сервера:</a></h2>
-			<h2><a id="timerclosetext2">2018 год, 5 августа, 12:39:45</a></h2>
-			<h2><a id="timerclosetext3">Сервер в разработке уже:</a></h2>
-			<h3><a id="news"><pre>
-			</pre></a><h4>
-			
-			<img src = "loading.png" id="loading"></img>
 			<img src = "sbox.png" id="bg"></img>
-			<h3><a id="timer">...</a></h3>
-			<a id="test">(86%)</a>
-			<div id="bg-img"><p></img></p><a href="https://discord.gg/NXwWgUF"><img src="discord.png" id="discordbutton" height="50px"></img></a><a>   </a><a href="https://vk.com/rusboxserver"><img src="Vk.png" id="vkbutton" height="50px" href="vk.com"></img></a></div>
+			<canvas width=550 height = 980 id = "character"></canvas>
+			<h3><a class = "timer" id="days">99</a></h3>
+			<h3><a class = "timer" id="hours">99</a></h3>
+			<h3><a class = "timer" id="minutes">99</a></h3>
+			<h3><a class = "timer" id="seconds">99</a></h3>
 		</div>
 		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
 		<script type="text/javascript" src="timerscript.js"></script>
