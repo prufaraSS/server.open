@@ -13,7 +13,7 @@ var ZHours = new Date().getHours() - DayZ.getHours();
 var ZMinutes = new Date().getMinutes() - DayZ.getMinutes();
 var ZSeconds = new Date().getSeconds() - DayZ.getSeconds();
 
-state = 0;
+state = -1;
 x = -3;
 zoom1 = 1;
 zoom2 = 1;
@@ -277,6 +277,7 @@ function secondss() {
 }
 
 addEventListener('click', event1);
+window.onload = function() {state = 0}
 
 function event1() {
 	if (state == 0) {
