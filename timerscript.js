@@ -20,7 +20,7 @@ zoom2 = 1;
 visible = 0;
 
 var img = Math.floor((Math.random()*6)+1);
-var chr = Math.floor((Math.random()*10)+1);
+var chr = Math.floor((Math.random()*10));
 var v = 0.5;
 
 var img1 = new Image();
