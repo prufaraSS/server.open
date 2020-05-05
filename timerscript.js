@@ -277,7 +277,7 @@ function secondss() {
 }
 
 addEventListener('click', event1);
-window.onload = function() {state = 0}
+window.onload = function() {state = 0; document.getElementById("loadin").parentNode.removeChild(document.getElementById("loadin"));}
 
 function event1() {
 	if (state == 0) {
