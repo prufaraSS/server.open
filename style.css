@@ -149,6 +149,43 @@
 	height:100%;
 	z-index:2;
 }
+@font-face{
+	font-family:'Steel Tongs';
+	src: url('../SteelTongs.ttf') format('ttf');
+}
+#loadin{
+	position:fixed;
+	right:0%;
+	bottom:0%;
+	margin-bottom:25px;
+	margin-right:25px;
+	color:transparent;
+	font-family:'Steel Tongs';
+	font-size:45;
+	z-index:3;
+	background: rgb(62,62,62);
+	background: linear-gradient(90deg, rgba(62,62,62,1) 0%, rgba(62,62,62,1) 40%, rgba(189,189,189,1) 50%, rgba(62,62,62,1) 60%, rgba(62,62,62,1) 100%);
+	background-clip: text;
+	-webkit-background-position:0%;
+	background-position:0%;
+	background-repeat: repeat-x;
+	background-size:1000% 1000%;
+	-webkit-background-clip: text;
+	animation: mov 2s linear infinite;
+	-webkit-animation: mov 1s linear infinite;
+}
+
+@keyframes mov{
+	0% {
+		background-position:0%;
+		-webkit-background-position:0%;
+	}
+	100% {
+		background-position:100%;
+		-webkit-background-position:100%;
+	}
+}
+
 #event1{
 	.opacity:0%;
 }
