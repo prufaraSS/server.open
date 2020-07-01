@@ -256,7 +256,7 @@ function secondss() {
 		if (Days >= 10){
 			document.getElementById("days").innerHTML=Days;
 		} else {
-			document.getElementById("days").innerHTML="0"+Days;
+			document.getElementById("days").innerHTML=Days;
 		}
 		if (Hours >= 10) {
 			document.getElementById("hours").innerHTML=Hours;
