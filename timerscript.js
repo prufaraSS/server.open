@@ -1,4 +1,4 @@
-var DayX = new Date(2021,16,5,0,0,0,0);
+var DayX = new Date(2021,5,16,0,0,0,0);
 //var DayX = new Date(2019,7,5,12,0,0,0);
 
 var Years = DayX.getFullYear() - new Date().getFullYear()
@@ -20,7 +20,7 @@ zoom2 = 1;
 visible = 0;
 
 var img = Math.floor((Math.random()*6)+1);
-var chr = Math.floor((Math.random()*10));
+var chr = Math.floor((Math.random()*10)+1);
 var v = 0.5;
 
 var img1 = new Image();
@@ -194,12 +194,30 @@ if (Hours > 24) {
 }
 if (Days < 0) {
 	Years = Years - 1;
-	//Days = Days + 365;
+	Days = Days + 365;
 }
 
 if (Years > 0) {
-	//document.getElementById("timer").innerHTML=Years + "  " + Days + "  " + Hours + "  " + Minutes + "  " + Seconds;
-	document.getElementById("days").innerHTML=999;
+	if (Days >= 10){
+		document.getElementById("days").innerHTML=Days + Years*365;
+	} else {
+		document.getElementById("days").innerHTML="0"+Days;
+	}
+	if (Hours >= 10) {
+		document.getElementById("hours").innerHTML=Hours;
+	} else {
+		document.getElementById("hours").innerHTML="0"+Hours;
+	}
+	if (Minutes >= 10) {
+		document.getElementById("minutes").innerHTML=Minutes;
+	} else {
+		document.getElementById("minutes").innerHTML="0"+Minutes;
+	}
+	if (Seconds >= 10) {
+		document.getElementById("seconds").innerHTML=Seconds;
+	} else {
+		document.getElementById("seconds").innerHTML="0"+Seconds;
+	}
 }
 else {
 	if (Days >= 10){
@@ -251,14 +269,32 @@ function secondss() {
 		Days = Days + 1
 	}
 	if (Years > 0) {
-		//document.getElementById("timer").innerHTML=Years + " " + Days + " " + Hours + " " + Minutes + " " + Seconds;
-		document.getElementById("days").innerHTML=999;
+		if (Days >= 10){
+			document.getElementById("days").innerHTML=Days + Years*365;
+		} else {
+			document.getElementById("days").innerHTML="0"+Days;
+		}
+		if (Hours >= 10) {
+			document.getElementById("hours").innerHTML=Hours;
+		} else {
+			document.getElementById("hours").innerHTML="0"+Hours;
+		}
+		if (Minutes >= 10) {
+			document.getElementById("minutes").innerHTML=Minutes;
+		} else {
+			document.getElementById("minutes").innerHTML="0"+Minutes;
+		}
+		if (Seconds >= 10) {
+			document.getElementById("seconds").innerHTML=Seconds;
+		} else {
+			document.getElementById("seconds").innerHTML="0"+Seconds;
+		}
 	}
 	else {
 		if (Days >= 10){
 			document.getElementById("days").innerHTML=Days;
 		} else {
-			document.getElementById("days").innerHTML=Days;
+			document.getElementById("days").innerHTML="0"+Days;
 		}
 		if (Hours >= 10) {
 			document.getElementById("hours").innerHTML=Hours;
@@ -279,6 +315,7 @@ function secondss() {
 }
 
 addEventListener('click', event1);
+
 window.onload = function() {state = 0; document.getElementById("loadin").parentNode.removeChild(document.getElementById("loadin"));}
 
 function event1() {
