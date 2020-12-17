@@ -199,6 +199,7 @@ if (Days < 0) {
 
 if (Years > 0) {
 	//document.getElementById("timer").innerHTML=Years + "  " + Days + "  " + Hours + "  " + Minutes + "  " + Seconds;
+	document.getElementById("days").innerHTML=999;
 }
 else {
 	if (Days >= 10){
@@ -251,6 +252,7 @@ function secondss() {
 	}
 	if (Years > 0) {
 		//document.getElementById("timer").innerHTML=Years + " " + Days + " " + Hours + " " + Minutes + " " + Seconds;
+		document.getElementById("days").innerHTML=999;
 	}
 	else {
 		if (Days >= 10){
