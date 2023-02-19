@@ -29,6 +29,7 @@ var img3 = new Image();
 var img4 = new Image();
 var img5 = new Image();
 var img6 = new Image();
+var img7 = new Image();
 var blank = new Image();
 var preludeimg = new Image();
 var spar = new Image();
@@ -43,6 +44,7 @@ img3.src = "img3.jpg";
 img4.src = "img4.jpg";
 img5.src = "img2.jpg";
 img6.src = "img6.jpg";
+img7.src = "img7.jpg";
 blank.src = "blank.png";
 preludeimg.src = "black.png";
 spar.src = "spar.png";
@@ -74,7 +76,7 @@ bogdanwoop.src = "ch_bogdanwoop.png";
 var characters=[predator,spar4ik,shitok,lxrd,kotoninja,pruf,bogdanwoop,maksik,prizrak,shaolesh];
 var prevchar = -1;
 
-var imgs=[img1,img2,img3,img4,img5,img6];
+var imgs=[img1,img2,img3,img4,img5,img6,img7];
 
 
 var cv = document.getElementById('anim-bg');
