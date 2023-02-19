@@ -199,50 +199,7 @@ if (Days < 0) {
 	Days = Days + 365;
 }
 
-if (Years > 0) {
-	if (Days >= 10){
-		document.getElementById("days").innerHTML=Days + Years*365;
-	} else {
-		document.getElementById("days").innerHTML="0"+Days;
-	}
-	if (Hours >= 10) {
-		document.getElementById("hours").innerHTML=Hours;
-	} else {
-		document.getElementById("hours").innerHTML="0"+Hours;
-	}
-	if (Minutes >= 10) {
-		document.getElementById("minutes").innerHTML=Minutes;
-	} else {
-		document.getElementById("minutes").innerHTML="0"+Minutes;
-	}
-	if (Seconds >= 10) {
-		document.getElementById("seconds").innerHTML=Seconds;
-	} else {
-		document.getElementById("seconds").innerHTML="0"+Seconds;
-	}
-}
-else {
-	if (Days >= 10){
-		document.getElementById("days").innerHTML=Days;
-	} else {
-		document.getElementById("days").innerHTML="0"+Days;
-	}
-	if (Hours >= 10) {
-		document.getElementById("hours").innerHTML=Hours;
-	} else {
-		document.getElementById("hours").innerHTML="0"+Hours;
-	}
-	if (Minutes >= 10) {
-		document.getElementById("minutes").innerHTML=Minutes;
-	} else {
-		document.getElementById("minutes").innerHTML="0"+Minutes;
-	}
-	if (Seconds >= 10) {
-		document.getElementById("seconds").innerHTML=Seconds;
-	} else {
-		document.getElementById("seconds").innerHTML="0"+Seconds;
-	}
-}
+
 setInterval(secondss,1000);
 function secondss() {
 	Seconds = Seconds - 1;

@@ -9,18 +9,17 @@
 	z-index:3;
 }
 
-.timer{
+#failure{
 	font-size: 30px;
-	text-align:justify;
+	text-align:center;
 	position:fixed;
 	margin-top:75px;
 	top:50%;
 	left:50%;
 	right:50%;
-	margin-left:-175px;
-	margin-right:-175px;
+	margin-left:-500px;
+	margin-right:-500px;
 	letter-spacing:5px;
-	width:40px;
 	.background:#ffffff;
 	color:#000;
 	text-shadow:
@@ -32,55 +31,16 @@
 	z-index:3;
 }
 
-#days{
-	margin-left:-175px;
-	margin-right:-175px;
-	animation: out 1.0s ease infinite;
-	animation-fill-mode: forwards;
+#blogpost{
+	position:fixed;
+	margin-top:140px;
+	top:50%;
+	left:50%;
+	right:50%;
+	margin-left:-400px;
+	margin-right:-400px;
+	z-index:3;
 }
-#hours{
-	margin-left:-80px;
-	margin-right:-80px;
-	animation: out 1.0s ease infinite;
-	animation-fill-mode: forwards;
-}
-#minutes{
-	margin-left:26px;
-	margin-right:26px;
-	animation: out 1.0s ease infinite;
-	animation-fill-mode: forwards;
-}
-#seconds{
-	margin-left:130px;
-	margin-right:130px;
-	animation: out 1.0s ease 1;
-	animation-fill-mode: forwards;
-}
-#daysa{
-	margin-left:-175px;
-	margin-right:-175px;
-	animation: in 1.0s ease infinite;
-	animation-fill-mode: forwards;
-}
-#hoursa{
-	margin-left:-80px;
-	margin-right:-80px;
-	animation: in 1.0s ease infinite;
-	animation-fill-mode: forwards;
-}
-#minutesa{
-	margin-left:26px;
-	margin-right:26px;
-	animation: in 1.0s ease 1;
-	animation-fill-mode: forwards;
-}
-#secondsa{
-	margin-left:130px;
-	margin-right:130px;
-	animation: in 1.0s ease 1;
-	animation-fill-mode: forwards;
-}
-
 
 #bg-img{
 	position:fixed;
